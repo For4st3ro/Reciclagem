@@ -252,6 +252,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
+  
   color: #fff;
 }
 
@@ -285,7 +286,9 @@ h6 {
 
 .navbar-mobile ul {
   display: block;
-
+  width: 100%;
+  text-align: center;
+  justify-content: center;
   top: 55px;
   right: 15px;
   bottom: 15px;
