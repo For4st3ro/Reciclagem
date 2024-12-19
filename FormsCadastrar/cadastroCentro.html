@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CadastroCss/cadastroCentro.css">
+    
+</head>
+
+    
+<body>
+
+        <div class="form-box">
+            <h2>Cadastro de Centros De Reciclagem</h2>
+            <p> Já é um membro? <a href="/FormsLogin/LoginEmpresa.html"> Login </a> </p>
+            <p> voltar para o inicio <a href="../index.html">RbyR</a></h1></p>
+            <form action="#">
+                <div class="input-group">
+                    <label for="nome"> Nome do Centro</label>
+                    <input type="text" id="nome" placeholder="Digite o seu nome completo da instituição" required>
+                </div>
+                
+
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite o seu email" required>
+                </div>
+
+                <div class="input-group w50">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <div class="input-group w50">
+                    <label for="Confirmarsenha">Confirmar Senha</label>
+                    <input type="password" id="Confirmarsenha" placeholder="Confirme a senha" required>
+                </div>
+                <div class="input-group">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" id="cnpj" maxlength="18" placeholder="00.000.000/0000-00" oninput="mascaraCNPJ(this)" required>
+                </div>
+
+                <div class="input-group">
+                  <label for="telefone">Telefone</label>
+                  <input type="tel" id="telefone" placeholder="Digite o seu telefone" required>
+              </div>
+                <h2 class="endereco">Endereço</h2>
+
+                <div class="input-group w50">
+                    <label for="text">Rua</label>
+                    <input type="text" id="text" placeholder="Digite sua rua" required>
+                </div>
+                <div class="input-group w50">
+                    <label for="numero">Número</label>
+                    <input type="number" id="numero" placeholder="Digite seu número" required>
+                </div>
+                <div class="input-group w50">
+                    <label for="numero">CEP</label>
+                    <input type="number" id="numero" placeholder="Digite seu CEP" required>
+                </div>
+                <div class="input-group w50">
+                    <label for="text">Bairro</label>
+                    <input type="text" id="text" placeholder="Digite seu bairro" required>
+                </div>
+
+
+                <h2 class="materiais">Materiais trabalhados</h2>
+
+                <br>
+
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label><strong>Selecione os materiais reciclados no centro:</strong></label><br><br>
+                        <input type="checkbox" id="materiais" value="plastico">
+                        <label for="material">Plástico</label><br>
+                        <input type="checkbox" id="materiais" value="vidro">
+                        <label for="material">Vidro</label><br>
+                        <input type="checkbox" id="materiais" value="metal">
+                        <label for="material">Metal</label><br>
+                        <input type="checkbox" id="materiais" value="papel">
+                        <label for="material">Papel</label><br>
+                        <input type="checkbox" id="materiais" value="eletronicos">
+                        <label for="material">Eletrônicos</label><br>
+                    </div>
+                </fieldset>
+                
+                <div class="campo">
+                  <label for="capacidade"><strong>Capacidade de processamento:</strong></label>
+                  <select name="capacidade" id="capacidade">
+                      <option>Diária</option>
+                      <option>Semanal</option>
+                      <option>Mensal</option>
+                  </select>
+                  <div class="campo">
+                    <label for="Tipo"><strong>Tipo de massa</strong></label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>GRAMA (G)</option>
+                      <option>QUILOGRAMA (KG)</option>
+                      <option>TONELADAS (T)</option>
+                    </select>
+                  </div>
+                  <div class="campo">
+                    <label for="capacidade"><strong>quantidade:</strong></label>
+                    <input type="number" class="form-control" id="" placeholder="">
+              </div>
+
+                <div class="input-group">
+                    <button>Cadastrar</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
